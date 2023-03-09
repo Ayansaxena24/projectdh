@@ -11,6 +11,7 @@ import Scroll from "./Scroll";
 import LastPage from "./Lastpage";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
+import Videos from "./Videos";
 import SimpleMap from "./Map";
 import TemporaryDrawer from "./Sidebar";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
@@ -27,6 +28,7 @@ return (
     <AboutUs />
     <WhyUs />
     <Gallery />
+    <Videos />
     <Testimonials />
     <Scroll className="fixed right-7 bottom-7 md:right-7 md:bottom-7 sm:right-7 sm:bottom-7 lg:right-12 lg:bottom-9 z-10"/>
     <ContactUs />
