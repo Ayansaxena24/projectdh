@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 // Render a YouTube video player
 const Videos = () => {
     return (
-        <div className='rounded-sm border-2 border-gray-100 p-2 justify-center items-center pb-10'>
+        <div className='rounded-sm border-2 border-gray-100 p-2 justify-center items-center pb-12'>
             <h1 className="font-bold text-3xl text-center py-12">Videos</h1>
             <div className='flex flex-row gap-4 w-full justify-center items-center'>
             <div className='flex flex-col gap-4'>

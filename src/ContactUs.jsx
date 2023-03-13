@@ -26,7 +26,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <div className="border border-gray-100 shadow-sm relative my-2 items-center h-[80%] flex flex-col pb-6">
+      <div className="border border-gray-100 shadow-sm relative my-2 items-center h-[80%] flex flex-col pb-16">
         <h1 className="font-bold text-3xl text-center py-16">Contact Us</h1>
         <div className="flex flex-col sm:flex-row gap-6 justify-between items-center w-full max-w-5xl mx-auto">
           <div className="px-6 space-y-4">

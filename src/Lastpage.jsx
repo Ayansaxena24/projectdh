@@ -39,7 +39,7 @@ export default function LastPage()
                 <div>
                     <div className="flex flex-col">
                         <p className="font-bold">CONNECT</p>
-                        <p className="font-extrabold text-xl hover:text-orange-500 text-white rounded-full text-center mt-2 bg-black">JD</p>
+                        <p className="font-extrabold text-xl hover:bg-orange-500 text-white rounded-full text-center mt-2 bg-black">JD</p>
                     </div>
                 </div>
             </div>
