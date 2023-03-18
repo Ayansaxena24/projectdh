@@ -10,18 +10,34 @@ const Gallery = () => {
     <>
       <div className="border border-gray-100 shadow-sm relative my-2 items-center h-[100%] flex flex-col pb-12">
         <h1 className="font-bold text-3xl text-center py-16">Gallery</h1>
-        <div className="flex space-x-2 sm:space-x-2 sm:px-2 md:space-x-2 md:px-3 flex-row-3 justify-items-stretch pb-4 lg:pb-0 md:pb-2 px-2">
-          <div>
-            <img src={test1} alt="test1" className="flex flex-wrap justify-center rounded-xl py-2"/>
+        <div className="grid grid-cols-2 md:grid-cols-4 space-x-4 sm:space-x-2 sm:px-2 md:space-x-8 md:px-16 pb-4 lg:pb-0 md:pb-2 px-4">
+        <div>
+            <img
+              src={test1}
+              alt="test3"
+              className="flex flex-wrap justify-center rounded-3xl py-2"
+            />
           </div>
           <div>
-            <img src={test1} alt="test3" className="flex flex-wrap justify-center rounded-xl py-2"/>
+            <img
+              src={test1}
+              alt="test3"
+              className="flex flex-wrap justify-center rounded-3xl py-2"
+            />
           </div>
           <div>
-            <img src={test1} alt="test1" className="flex flex-wrap justify-center rounded-xl py-2"/>
+            <img
+              src={test1}
+              alt="test3"
+              className="flex flex-wrap justify-center rounded-3xl py-2"
+            />
           </div>
           <div>
-            <img src={test1} alt="test1" className="flex flex-wrap justify-center rounded-xl py-2"/>
+            <img
+              src={test1}
+              alt="test3"
+              className="flex flex-wrap justify-center rounded-3xl py-2"
+            />
           </div>
         </div>
       </div>
@@ -31,7 +47,8 @@ const Gallery = () => {
 
 export default Gallery;
 
-{/* <div className="border border-gray-100 shadow-sm relative my-2 items-center h-[40%] flex flex-col">
+{
+  /* <div className="border border-gray-100 shadow-sm relative my-2 items-center h-[40%] flex flex-col">
         <h1 className="font-bold text-3xl text-center py-16">Gallery</h1>
         <div className="space-x-4 flex flex-row-3 justify-center items-center text-center pb-4 lg:pb-0 md:pb-2 px-3">
           <div>
@@ -51,4 +68,5 @@ export default Gallery;
           
         </div>
       </div>
-    </> */}
+    </> */
+}

@@ -59,45 +59,50 @@ const Testimonials = () => {
     },
   ];
 
-// // Add duplicates of the first two items at the end of the array
-// items.push(items[0], items[1]);
+  // // Add duplicates of the first two items at the end of the array
+  // items.push(items[0], items[1]);
 
-return (
+  return (
     <div className="flex flex-col sm:flex-row justify-center items-center">
-    <img src={background} className="h-50 w-3/4 sm:w-1/2 relative" />
-    <Carousel
-    className="w-full absolute right-20"
-    style={carouselStyle}
-    animation="slide"
-    stopAutoPlayOnHover="true"
-    duration={300}
-    slides={3}
-    interval={4000}
-    fullHeightHover={false}
-    navButtonsAlwaysVisible={true}
-    visibleSlides={2}
-    navButtonWrapperProps={navButtonWrapperProps}
-    navButtonsProps={{
-    // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
-    style: {
-    backgroundColor: "black",
-    borderRadius: 20,
-    },
-    }}
-    navButtonsWrapperProps={{
-    // Move the buttons to the bottom. Unsetting top here to override default style.
-    style: {
-    bottom: "36px",
-    margin: "0px",
-    top: "unset",
-    },
-    }}
-    >
-    {items.map((item, i) => {
+      <img src={background} className="h-50 w-3/4 sm:w-1/2 relative" />
+      <Carousel
+        className="w-full absolute right-20 scale-125 grid h-[70%] bg-transparent"
+        style={carouselStyle}
+        backgroundColor="none"
+        animation="slide"
+        stopAutoPlayOnHover="true"
+        duration={400}
+        slides={3}
+        interval={4000}
+        fullHeightHover={false}
+        navButtonsAlwaysVisible={true}
+        visibleSlides={2}
+        navButtonWrapperProps={navButtonWrapperProps}
+        navButtonsProps={{
+          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
+          style: {
+            backgroundColor: "white",
+            color: "black",
+            border: "1px solid white",
+            boxShadow: "1px 1px 1px 1px gray",
+            borderRadius: 20,
+          },
+        }}
+        navButtonsWrapperProps={{
+          // Move the buttons to the bottom. Unsetting top here to override default style.
+          style: {
+            bottom: "36px",
+            margin: "0px",
+            top: "unset",
+          },
+        }}
+      >
+        {items.map((item, i) => {
           // check if there are two more items to display
           if (i + 2 <= items.length) {
             return (
               <TwoItems
+                className="grid grid-cols-2 h-[20%]"
                 key={i}
                 item={items[i]}
                 item2={items[i + 1]}
@@ -108,6 +113,7 @@ return (
           // if there is only one item left to display
           return (
             <TwoItems
+              className="grid grid-cols-2 h-[20%]"
               key={i}
               item={items[i]}
               item2={items[0]}
@@ -117,33 +123,39 @@ return (
         })}
       </Carousel>
     </div>
-    );
-    };
-    
-    function TwoItems(props) {
-      return (
-        <div className="flex gap-2 scale-75 lg:scale-100 bg-transparent px-8">
-          <Item item={props.item} navButtonWrapperProps={props.navButtonWrapperProps} />
-          <Item item={props.item2} navButtonWrapperProps={props.navButtonWrapperProps} />
-        </div>
-      );
-    }
-    
-    function Item(props) {
-    return (
+  );
+};
+
+function TwoItems(props) {
+  return (
+    <div className="grid grid-cols-2 gap-0 scale-75 lg:scale-100 bg-transparent pl-10 h-full">
+      <Item
+        item={props.item}
+        navButtonWrapperProps={props.navButtonWrapperProps}
+      />
+      <Item
+        item={props.item2}
+        navButtonWrapperProps={props.navButtonWrapperProps}
+      />
+    </div>
+  );
+}
+
+function Item(props) {
+  return (
     <Paper
-       className="flex flex-col gap-4 text-sm py-2 bg-transparent py-4 px-4"
-       navButtonWrapperProps={props.navButtonWrapperProps}
-     >
-    <div className="flex flex-row gap-3">
-    <div className="rounded-full p-3 bg-orange-400 relative left-2 scale-75">
-    {<ImQuotesLeft className="absolute bottom-3 right-1 text-xl" />}
-    </div>
-    <h2 className="font-bold left-2">{props.item.name}</h2>
-    </div>
-    <p className="flex flex-wrap text-start pl-3">{props.item.description}</p>
+      className="flex flex-col gap-4 text-sm py-2 py-4 px-4 h-[90%] w-[90%]"
+      navButtonWrapperProps={props.navButtonWrapperProps}
+    >
+      <div className="flex flex-row gap-3">
+        <div className="rounded-full p-3 bg-orange-400 relative left-2 scale-75">
+          {<ImQuotesLeft className="absolute bottom-3 right-1 text-xl" />}
+        </div>
+        <h2 className="font-bold left-2">{props.item.name}</h2>
+      </div>
+      <p className="flex flex-wrap text-start pl-2 text-xs pb-4">{props.item.description}</p>
     </Paper>
-    );
-    }
+  );
+}
 
 export default Testimonials;
