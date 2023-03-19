@@ -63,10 +63,10 @@ const Testimonials = () => {
   // items.push(items[0], items[1]);
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center">
+    <div className="flex flex-col md:flex-row justify-center items-center">
       <img src={background} className="h-50 w-3/4 sm:w-1/2 relative" />
       <Carousel
-        className="w-full absolute right-20 scale-125 grid h-[70%] bg-transparent"
+        className="w-full absolute sm:right-20 scale-75 md:scale-90 md:top-10 grid h-[70%] bg-transparent"
         style={carouselStyle}
         backgroundColor="none"
         animation="slide"
@@ -128,7 +128,7 @@ const Testimonials = () => {
 
 function TwoItems(props) {
   return (
-    <div className="grid grid-cols-2 gap-0 scale-75 lg:scale-100 bg-transparent pl-10 h-full">
+    <div className="grid grid-cols-2 gap-0 scale-90 lg:scale-100 bg-transparent sm:pl-10 pl-4 h-full">
       <Item
         item={props.item}
         navButtonWrapperProps={props.navButtonWrapperProps}
