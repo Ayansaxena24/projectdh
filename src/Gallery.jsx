@@ -10,7 +10,7 @@ const Gallery = () => {
     <>
       <div className="border border-gray-100 shadow-sm relative my-2 items-center h-[100%] flex flex-col pb-12">
         <h1 className="font-bold text-3xl text-center py-16">Gallery</h1>
-        <div className="grid grid-cols-2 md:grid-cols-4 space-x-4 sm:space-x-2 sm:px-2 md:space-x-8 md:px-16 pb-4 lg:pb-0 md:pb-2 px-4">
+        <div className="grid grid-rows-2 md:grid-rows-1 md:grid-flow-col space-x-4 sm:space-x-2 sm:px-2 md:space-x-8 md:px-16 pb-4 lg:pb-0 md:pb-2 px-4">
         <div>
             <img
               src={test1}

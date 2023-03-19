@@ -15,7 +15,7 @@ export default function LastPage()
                         <p className="hover:text-orange-500 text-sm">SERVICES</p>
                         <p className="hover:text-orange-500 text-sm">WHY US</p>
                         <p className="hover:text-orange-500 text-sm">VIDEOS</p>
-                        <p className="hover:text-orange-500 text-sm">MORE</p>
+                        <p className="hover:text-orange-500 text-sm">CONTACT US</p>
                     </div>
                 </div>
                 <div>

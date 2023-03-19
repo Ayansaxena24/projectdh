@@ -43,7 +43,8 @@ const BasicHeader = () => {
           <div className="justify-items-end flex gap-10 text-gray-700 mr-10">
             <div className="flex flex-row hover:text-orange-500">
               <SlLocationPin className="text-xl mt-2 " />
-              <p className="pl-1 mt-1">Sodala</p>
+              {/* <p className="pl-1 mt-1">Sodala</p> */}
+              <a href="https://maps.google.com/maps/dir//Sthapna+architects+WQ2G%2B78G+Ramnagar+Main+Rd,+Shiv+Puri+Colony,+Sodala+Jaipur,+Rajasthan+302007/@26.9006775,75.7758423,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x396db59e54a6e2b9:0x9781ff1d59d9fd54"className="pl-1 mt-1">Sodala</a>
             </div>
             <div className="flex flex-row mr-8 text-gray-700 hover:text-orange-500">
               <MdPermIdentity className="text-xl mt-2 " />

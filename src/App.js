@@ -16,6 +16,7 @@ import TemporaryDrawer from "./Sidebar";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
+import { AiOutlineMinusCircle  } from "react-icons/ai";
 
 const App = () => {
   
@@ -36,7 +37,6 @@ const App = () => {
 return (
   <div className="w-auto">
   <div className=" px-8 relative flex flex-col gap-1">
-    {/* <TemporaryDrawer /> */}
     <BasicHeader />
     <Header />
     <StartImage />

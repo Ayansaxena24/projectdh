@@ -4,7 +4,7 @@ import EnquireForm from "./EnquireForm";
 
 const StartImage = () => {
   return (
-    <div className="relative">
+    <div className="relative w-screen">
        <img 
            src={startimage} 
            alt="test1" 
