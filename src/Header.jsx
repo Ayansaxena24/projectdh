@@ -90,7 +90,7 @@ const Header = () => {
       >
         <BiMenu />
       </button>
-      <div className={`flex flex-col mt-4 absolute sm:static sm:z-auto sm:w-auto items-start sm:flex sm:flex-row sm:gap-4 sm:pr-10 sm:mr-5 sm:pl-3 md:flex md:items-center md:gap-3 lg:gap-3 md:pr-10 md:mr-5 md:pl-3 lg:flex lg:items-center lg:gap-4 lg:pr-10 lg:mr-5 lg:pl-3 pl-1 transition-all duration-500 bg-white ease-in ${open ? 'left-0 top-[-40px] h-screen gap-4 z:200':'left-[-490px] top-[-490px]'} z-[-1] w-full`}>
+      <div className={`flex flex-col mt-4 absolute sm:static sm:z-auto sm:w-auto items-start sm:grid sm:grid-cols-3 sm:gap-4 sm:pr-10 sm:mr-5 sm:pl-3 md:flex md:flex-row md:items-center md:gap-3 md:pr-10 md:mr-5 md:pl-3 lg:flex lg:items-center lg:gap-4 lg:pr-10 lg:mr-5 lg:pl-3 lg:gap-3 pl-1 transition-all duration-500 bg-white ease-in ${open ? 'left-0 top-[-40px] h-screen gap-4 z:200':'left-[-490px] top-[-490px]'} z-[-1] w-full`}>
         <button
           className="hover:bg-slate-100 p-2 rounded-md hover:-translate-y-1 ease-in duration-100 hover:text-orange-500"
           onClick={scrollToHome}

@@ -22,7 +22,7 @@ const BasicHeader = () => {
         </div>
       </MediaQuery>
       <MediaQuery minWidth={413}>
-        <div className="flex flex-row mt-2 justify-between flex-wrap">
+        <div className="flex sm:flex-row mt-2 justify-between flex-col">
           <div className="flex flex-row">
             <div className="flex flex-row gap-2 ml-4 sm:ml-16 lg:ml-24">
               <IoCall className="text-xl mt-2 hover:text-orange-500" />
@@ -31,6 +31,7 @@ const BasicHeader = () => {
                 JD
               </p>
             </div>
+            <div className="flex flex-col md:flex-row">
             <div className="ml-6 flex flex-row hover:text-orange-500 text-gray-700">
               <IoCallOutline className="text-xl mt-2" />
               <p className="pl-2 mt-1">+91-8890073787</p>
@@ -39,8 +40,10 @@ const BasicHeader = () => {
               <AiOutlineMail className="text-xl mt-2 " />
               <p className="pl-2 mt-1">archimaya83@gmail.com</p>
             </div>
+            </div>
           </div>
-          <div className="justify-items-end flex gap-10 text-gray-700 mr-10">
+          <div>
+            <div className="flex flex-col md:flex-row">
             <div className="flex flex-row hover:text-orange-500">
               <SlLocationPin className="text-xl mt-2 " />
               {/* <p className="pl-1 mt-1">Sodala</p> */}
@@ -56,7 +59,8 @@ const BasicHeader = () => {
                 Sign Up
               </p>
             </div>
-          </div>
+            </div>
+            </div>
         </div>
       </MediaQuery>
     </div>
