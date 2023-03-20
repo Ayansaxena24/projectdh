@@ -7,7 +7,7 @@ export default function LastPage()
         <div className="mb-4 rounded-md">
             {/* <p className="border-black border-2 rounded-md text-center">Map Component</p> */}
             <Map />
-            <div className="flex flex-row w-[80%] justify-between mb-4 pb-4 pt-2 mt-4 scale-75 sm:scale-100 gap-2 sm:gap-2">
+            <div className="grid grid-cols-1 sm:flex sm:flex-row w-[40%] md:w-[70%] justify-between mb-4 pb-4 sm:pt-2 sm:mt-4 scale-75 sm:scale-100 sm:gap-2">
                 <div>
                     <div className="flex flex-col gap-1">
                         <p className="font-bold text-sm">USEFUL LINKS</p>
@@ -19,7 +19,7 @@ export default function LastPage()
                     </div>
                 </div>
                 <div>
-                    <div className="flex flex-col gap-1 mt-6">
+                    <div className="flex flex-col gap-1 sm:mt-6">
                         <p className="hover:text-orange-500 text-sm">HOME </p>
                         <p className="hover:text-orange-500 text-sm">ABOUT US</p>
                         <p className="hover:text-orange-500 text-sm">GALLERY</p>
@@ -27,19 +27,20 @@ export default function LastPage()
                     </div>
                 </div>
                 <div>
-                    <div className="flex flex-col gap-1">
+                    <div className="flex flex-col gap-1 mt-4 sm:mt-0">
                         <p className="font-bold text-sm">CONTACT </p>
-                        <p>Plot No 79, Behind Sodala Thana, Shiv</p>
-                        <p>Path, Ram Nagar, Sodala, Jaipur</p>
-                        <p>302019, Rajasthan</p>
+                        <p>Plot No 79, Behind Sodala Thana,</p>
+                        <p>Shiv Path, Ram Nagar,</p>
+                        <p> Sodala, Jaipur,</p>
+                        <p>  302019, Rajasthan</p>
                         <p className="hover:text-orange-500">+91-8890079787</p>
                         <p className="hover:text-orange-500">archimaya83@gmail,com</p>
                     </div>
                 </div>
                 <div>
-                    <div className="flex flex-col">
-                        <p className="font-bold">CONNECT</p>
-                        <p className="font-extrabold text-xl hover:bg-orange-500 text-white rounded-full text-center mt-2 bg-black">JD</p>
+                    <div className="flex flex-col mt-4 sm:mt-0">
+                        <p className="font-bold text-sm">CONNECT</p>
+                        <p className="font-bold text-xl mt-8 hover:bg-orange-500 text-white rounded-full text-center py-1 px-2 absolute bg-black">Jd</p>
                     </div>
                 </div>
             </div>

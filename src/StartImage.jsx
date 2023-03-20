@@ -4,14 +4,16 @@ import EnquireForm from "./EnquireForm";
 
 const StartImage = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative md:w-full justify-center flex w-[160%]">
+    <div>
        <img 
            src={startimage} 
            alt="test1" 
-           className="flex flex-wrap justify-center py-2">
+           className="flex flex-wrap justify-center py-2 overflow:hidden w-[90%]">
        </img>
-       <div className="absolute sm:right-10 sm:bottom-24 right-2 bottom-14 flex flex-col items-center lg:bottom-28 lg:right-30 lg:gap-4 gap-2 xl:bottom-52 xl:right-40 ">
-       <p className="relative font-bold text-md sm:text-lg md:text-xl text-sm lg:text-3xl">Trusted and Efficient Architects</p>
+       </div>
+       <div className="absolute top-6 left-12 flex flex-col items-center sm:right-60 sm:top-36 lg:bottom-20 lg:right-10 md:right-4 md:top-28 md:scale-100 lg:gap-4 gap-2 xl:items-center xl:justify-center xl:left-60 ">
+       <p className="font-bold text-xl sm:text-2xl md:text-xl text-sm md:text-3xl lg:text-5xl">Trusted and Efficient Architects</p>
        <EnquireForm />
        </div>
     </div>

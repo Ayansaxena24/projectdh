@@ -10,7 +10,7 @@ const Videos = () => {
                     <div className='relative py-36 px-32 md:py-36 md:px-40 lg:px-56 lg:py-52 xl:px-64 xl:py-52'>
                      <div className='rounded-3xl'>
                         <ReactPlayer
-                            url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+                            url='https://www.youtube.com/watch?v=3_g2un5M350'
                             playing='true'
                             controls='true'
                             width='100%'
@@ -24,7 +24,7 @@ const Videos = () => {
                 <div className='flex flex-col gap-4 rounded-md overflow-hidden'>
                     <div className='relative py-36 px-32 md:py-36 md:px-40 lg:px-56 lg:py-52 xl:px-64 xl:py-52'>
                         <ReactPlayer
-                            url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+                            url='https://www.youtube.com/watch?v=3_g2un5M350'
                             playing='true'
                             controls='true'
                             width='100%'

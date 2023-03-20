@@ -23,21 +23,24 @@ export default function EnquireNowServices() {
   return (
     <div>
       <div  onClick={handleClickOpen}>
-        <button
+        {/* <button
           className="rounded-3xl bg-orange-500 text-white text-sm lg:px-3 lg:py-2 hover:bg-orange-400 hover:scale-110 ease-in duration-100 sm:px-3 md:px-2 md:py-1 px-2 py-2"
           type="submit"
         >
           Enquire Now
-        </button>
+        </button> */}
       </div>
       <Dialog open={open} onClose={handleClose} transitionDuration={1000}>
-        <div className="flex flex-row justify-center">
-          <DialogTitle className="flex-row justify-center items-center">
-            Send Enquiry
-          </DialogTitle>
-          <Button onClick={handleClose} className="right-0">
-            X
-          </Button>
+        {/* <div className='flex justify-end relative'><Button onClick={handleClose}>X</Button></div> */}
+        <div className="flex flex-row justify-between">
+          <div className="pl-4"></div>
+          <DialogTitle className="flex text-center ">Send Enquiry</DialogTitle>
+          <div className="pt-5 pr-2 scale-150">
+            <AiOutlineCloseCircle
+              className="text-red-500"
+              onClick={handleClose}
+            />
+          </div>
         </div>
         <DialogContent>
           <DialogContentText className="flex items-center justify-center">

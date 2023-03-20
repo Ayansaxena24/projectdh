@@ -72,7 +72,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="flex flex-col sm:flex sm:flex-row sm:justify-between items-start sm:items-center py-4 h-[15%] md:flex-row mb-4 sticky top-0 sm:right-3 sm:left-3 bg-white z-10 lg:justify-items-end">
+    <header className="hidden sm:visible flex flex-col sm:flex sm:flex-row sm:justify-between items-start sm:items-center py-4 h-[15%] md:flex-row mb-4 sticky top-0 sm:right-3 sm:left-3 bg-white z-10 lg:justify-items-end">
       <div className="flex">
         <div className="max-w-4xl mx-auto left-8 ml-4 sm:ml-16 lg:ml-24 mt-4">
           <div className="flex flex-row">

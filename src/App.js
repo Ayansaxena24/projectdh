@@ -33,7 +33,7 @@ const App = () => {
   const id = open ? "simple-popover" : undefined;
 
   return (
-    <div className="w-auto">
+    <div className="w-auto overflow-hidden">
       <div>
         <div className=" md:px-8 px-2 relative flex flex-col gap-1">
           <BasicHeader />

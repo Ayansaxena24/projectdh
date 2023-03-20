@@ -25,7 +25,7 @@ export default function EnquireForm() {
     <div>
       <button
         onClick={handleClickOpen}
-        className="rounded-3xl bg-orange-500 text-white text-sm hover:bg-orange-400 hover:scale-90 sm:hover:scale-90 md:hover:scale-90 ease-in duration-150 sm:px-3 md:px-4 md:py-2 px-3 py-1 scale-75 lg:scale-90 lg:px-4 lg:py-2 lg:hover:scale-100"
+        className="rounded-3xl bg-orange-500 text-white text-sm hover:bg-orange-400 hover:scale-90 sm:hover:scale-90 sm:scale-100 md:hover:scale-90 ease-in duration-300 sm:px-3 md:px-4 md:py-2 px-3 py-1 scale-75 lg:scale-125 lg:mt-8 lg:px-4 lg:py-2 lg:hover:scale-150"
         type="submit"
       >
         {" "}
