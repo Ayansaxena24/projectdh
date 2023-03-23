@@ -160,7 +160,7 @@ const BasicHeader = () => {
           <p className="font-bold ml-7 italic">Sthapna</p>
           <div className="flex flex-row gap-4 pt-1 ml-">
             <FiShoppingCart />
-            <IoCallOutline />
+            <a href="tel:+91-8890073787"><IoCallOutline /></a>
           </div>
         </div>
       </MediaQuery>
@@ -168,13 +168,14 @@ const BasicHeader = () => {
         <div className="flex sm:flex-row mt-2 justify-between flex-col">
           <div className="flex flex-row">
             <div className="flex flex-row gap-2 ml-4 sm:ml-16 lg:ml-24">
-              <IoCall className="text-xl mt-2 hover:text-orange-500" />
+            <a href="tel:+91-8890073787" className="text-xl mt-2 hover:text-orange-500"><IoCall /></a>
               <ImMail3 className="text-xl mt-2 hover:text-orange-500" />
               <p className="font-extrabold text-2xl hover:text-orange-500">
                 JD
               </p>
             </div>
             <div className="flex flex-col md:flex-row">
+            <a href="tel:+91-8890073787" className="ml-6 flex flex-row hover:text-orange-500 text-gray-700">
               <div className="ml-6 flex flex-row hover:text-orange-500 text-gray-700">
                 <IoCallOutline className="text-xl mt-2" />
                 <p className="pl-2 mt-1">+91-8890073787</p>
@@ -183,6 +184,7 @@ const BasicHeader = () => {
                 <AiOutlineMail className="text-xl mt-2 " />
                 <p className="pl-2 mt-1">archimaya83@gmail.com</p>
               </div>
+              </a>
             </div>
           </div>
           <div>

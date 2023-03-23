@@ -84,8 +84,8 @@ const App = () => {
                 </div>
                 <div className="flex flex-col bg-white pl-4 pr-4 py-4 space-y-4">
                   <div className="space-y-2">
-                    <p className="font-semibold text-xl">Contact Us</p>
-                    <p>+91-8890079787</p>
+                    <p className="font-semibold text-xl pb-2">Contact Us</p>
+                    <a href="tel:+91-8890073787">+91-8890079787</a>
                   </div>
                   <div className="space-y-2">
                     <p className="font-semibold text-xl">Mail Us</p>
