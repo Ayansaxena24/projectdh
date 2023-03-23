@@ -35,12 +35,13 @@ const App = () => {
   return (
     <div className="w-auto overflow-hidden">
       <div>
+
         <div className=" md:px-8 px-2 relative flex flex-col gap-1">
           <BasicHeader />
           <Header />
         </div>
-        <StartImage />
-        <div className=" px-8 relative flex flex-col gap-1">
+        <StartImage/>
+        <div className=" px-1 md:px-8 relative flex flex-col gap-1">
         <Services />
         <AboutUs />
         <WhyUs />

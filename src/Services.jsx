@@ -38,8 +38,21 @@ const Services = () => {
     <>
       <div className="border border-gray-100 shadow-sm relative my-2 items-center justify-center h-fit w-full flex flex-col">
         <h1 className="font-bold text-3xl text-center py-16">Services</h1>
-        <div className="grid grid-cols-2 md:grid-cols-5 grid-rows-5 md:grid-rows-2 items-center justify-center px-2 pb-8">
-          {/* <divbc className="flex flex-col md:flex-row gap-6 justify-between items-center w-fit max-w-8xl mx-2 px-2"> */}
+      <div className="flex justify-center items-center text-center pb-4">
+        {/* <div className="grid grid-cols-2 gap-x-12 md:grid-cols-5">
+          <div> Item 1 </div>
+          <div> Item 1 </div>
+          <div> Item 1 </div>
+          <div> Item 1 </div>
+          <div> Item 1 </div>
+          <div> Item 1 </div>
+          <div> Item 1 </div>
+          <div> Item 1 </div>
+          <div> Item 1 </div>
+          <div> Item 1 </div>
+
+          </div> */}
+        <div className="grid grid-cols-2 gap-x-0 md:gap-x-4 md:grid-cols-5 justify-center items-center ml-10 md:mx-8">
           <div
             onClick={handleClickOpen}
             className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
@@ -69,7 +82,10 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div onClick={handleClickOpen} className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]">
+          <div
+            onClick={handleClickOpen}
+            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+          >
             <div className="align-top">
               <div>
                 <img
@@ -95,7 +111,10 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div onClick={handleClickOpen} className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]">
+          <div
+            onClick={handleClickOpen}
+            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+          >
             <div className="align-top">
               <div>
                 <img
@@ -121,7 +140,10 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div onClick={handleClickOpen} className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]">
+          <div
+            onClick={handleClickOpen}
+            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+          >
             <div className="align-top">
               <div>
                 <img
@@ -147,7 +169,10 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div onClick={handleClickOpen} className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]">
+          <div
+            onClick={handleClickOpen}
+            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+          >
             <div className="align-top">
               <div>
                 <img
@@ -173,9 +198,10 @@ const Services = () => {
               </button>
             </div>
           </div>
-          {/* </divbc> */}
-          {/* <divbc className="flex flex-col md:flex-row gap-6 justify-between items-center w-fit max-w-8xl mx-2 px-2"> */}
-          <div onClick={handleClickOpen} className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md  sm:w-[100%] w-[70%] pt-4 h-[100%]">
+          <div
+            onClick={handleClickOpen}
+            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md  sm:w-[100%] w-[70%] pt-4 h-[100%]"
+          >
             <div className="align-top">
               <div>
                 <img
@@ -201,7 +227,10 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div onClick={handleClickOpen} className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md  sm:w-[100%] w-[70%] pt-4 h-[100%]">
+          <div
+            onClick={handleClickOpen}
+            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md  sm:w-[100%] w-[70%] pt-4 h-[100%]"
+          >
             <div className="align-top">
               <div>
                 <img
@@ -227,7 +256,10 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div onClick={handleClickOpen} className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]">
+          <div
+            onClick={handleClickOpen}
+            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+          >
             <div className="align-top">
               <div>
                 <img
@@ -251,7 +283,10 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div onClick={handleClickOpen} className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]">
+          <div
+            onClick={handleClickOpen}
+            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+          >
             <div className="align-top">
               <div>
                 <img
@@ -275,7 +310,10 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div onClick={handleClickOpen} className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]">
+          <div
+            onClick={handleClickOpen}
+            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+          >
             <div className="align-top">
               <div>
                 <img
@@ -299,7 +337,7 @@ const Services = () => {
               </button>
             </div>
           </div>
-          {/* </divbc> */}
+        </div>
         </div>
       </div>
 
@@ -313,18 +351,20 @@ const Services = () => {
           Enquire Now
         </button> */}
         </div>
-        <Dialog open={open} onClose={handleClose} transitionDuration={1000} >
-        {/* <div className='flex justify-end relative'><Button onClick={handleClose}>X</Button></div> */}
-        <div className="flex flex-row justify-between">
-          <div className="pl-6"></div>
-          <DialogTitle className="flex text-center ">Send Enquiry</DialogTitle>
-          <div className="pt-5 pr-5 scale-150">
-            <AiOutlineCloseCircle
-              className="text-red-500"
-              onClick={handleClose}
-            />
+        <Dialog open={open} onClose={handleClose} transitionDuration={1000}>
+          {/* <div className='flex justify-end relative'><Button onClick={handleClose}>X</Button></div> */}
+          <div className="flex flex-row justify-between">
+            <div className="pl-6"></div>
+            <DialogTitle className="flex text-center ">
+              Send Enquiry
+            </DialogTitle>
+            <div className="pt-5 pr-5 scale-150">
+              <AiOutlineCloseCircle
+                className="text-red-500"
+                onClick={handleClose}
+              />
+            </div>
           </div>
-        </div>
           <DialogContent>
             <DialogContentText className="flex items-center justify-center">
               Write to us for any business enquiries

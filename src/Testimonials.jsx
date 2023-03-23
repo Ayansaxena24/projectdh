@@ -113,7 +113,7 @@ const Testimonials = () => {
           // if there is only one item left to display
           return (
             <TwoItems
-              className="grid grid-cols-2 h-[20%]"
+              className="grid grid-cols-2 h-full"
               key={i}
               item={items[i]}
               item2={items[0]}
@@ -144,7 +144,7 @@ function TwoItems(props) {
 function Item(props) {
   return (
     <Paper
-      className="flex flex-col gap-4 text-sm py-2 py-4 px-4 h-[90%] w-[90%]"
+      className="flex flex-col gap-4 text-sm py-4 px-4 h-[100%] w-[90%]"
       navButtonWrapperProps={props.navButtonWrapperProps}
     >
       <div className="flex flex-row gap-3">

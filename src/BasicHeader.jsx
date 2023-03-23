@@ -19,6 +19,10 @@ import { SlLocationPin } from "react-icons/sl";
 import { MdPermIdentity } from "react-icons/md";
 import { FiShoppingCart } from "react-icons/fi";
 import { BiMenu } from "react-icons/bi";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 const BasicHeader = () => {
   const [state, setState] = React.useState({
@@ -34,6 +38,12 @@ const BasicHeader = () => {
     }
 
     setState({ ...state, [anchor]: open });
+  };
+
+  const [age, setAge] = React.useState('');
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
   };
 
   const list = (anchor) => (
@@ -60,7 +70,7 @@ const BasicHeader = () => {
         ))}
       </List>
       <Divider />
-      <List>
+      <List className="flex flex-row">
         {["Language"].map((text, index) => (
           <ListItem key={text} disablePadding className="hover:bg-gray-200">
             <ListItemButton>
@@ -68,6 +78,29 @@ const BasicHeader = () => {
             </ListItemButton>
           </ListItem>
         ))}
+         <Box sx={{ minWidth: 120 }} className="pr-4">
+      <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Language</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={age}
+          label="Language"
+          onChange={handleChange}
+        >
+          <MenuItem value="English" >English</MenuItem>
+          <MenuItem value="हिंदी">हिंदी</MenuItem>
+          <MenuItem value="मराठी">मराठी</MenuItem>
+          <MenuItem value="বাংলা">বাংলা</MenuItem>
+          <MenuItem value="தமிழ்">தமிழ்</MenuItem>
+          <MenuItem value="ગુજરાતી">ગુજરાતી</MenuItem>
+          <MenuItem value="ಕನ್ನಡ">ಕನ್ನಡ</MenuItem>
+          <MenuItem value="മലയാളം">മലയാളം</MenuItem>
+          <MenuItem value="తెలుగు">తెలుగు</MenuItem>
+          <MenuItem value="ਪੰਜਾਬੀ">ਪੰਜਾਬੀ</MenuItem>
+        </Select>
+      </FormControl>
+    </Box>
       </List>
       <Divider />
       <List>
