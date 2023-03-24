@@ -52,10 +52,10 @@ const Services = () => {
           <div> Item 1 </div>
 
           </div> */}
-        <div className="grid grid-cols-2 gap-x-0 md:gap-x-4 md:grid-cols-5 justify-center items-center ml-10 md:mx-8">
+        <div className="grid grid-cols-2 md:gap-x-4 md:grid-cols-5 place-items-center items-center md:mx-8">
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
@@ -84,7 +84,7 @@ const Services = () => {
           </div>
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
@@ -113,7 +113,7 @@ const Services = () => {
           </div>
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
@@ -142,7 +142,7 @@ const Services = () => {
           </div>
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
@@ -171,7 +171,7 @@ const Services = () => {
           </div>
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
@@ -200,7 +200,7 @@ const Services = () => {
           </div>
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md  sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md  sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
@@ -229,7 +229,7 @@ const Services = () => {
           </div>
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md  sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md  sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
@@ -258,7 +258,7 @@ const Services = () => {
           </div>
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
@@ -285,7 +285,7 @@ const Services = () => {
           </div>
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
@@ -312,7 +312,7 @@ const Services = () => {
           </div>
           <div
             onClick={handleClickOpen}
-            className="flex flex-col space-y-2 items-center hover:shadow-xl px-3 my-3 pb-3 rounded-md sm:w-[100%] w-[70%] pt-4 h-[100%]"
+            className="flex flex-col space-y-2 items-center hover:shadow-xl my-3 pb-3 rounded-md sm:w-[100%] w-[100%] px-2 md:px-0 pt-4 h-[100%]"
           >
             <div className="align-top">
               <div>
