@@ -9,6 +9,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { Slide } from "@mui/material";
 
 export default function EnquireForm() {
   const [open, setOpen] = useState(false);
@@ -31,12 +32,12 @@ export default function EnquireForm() {
         {" "}
         Enquire Now
       </button>
-      <Dialog open={open} onClose={handleClose} transitionDuration={1000}>
+      <Dialog open={open} onClose={handleClose} transitionDuration={700} TransitionComponent={Slide}>
         {/* <div className='flex justify-end relative'><Button onClick={handleClose}>X</Button></div> */}
         <div className="flex flex-row justify-between">
           <div className="pl-4"></div>
           <DialogTitle className="flex text-center ">Send Enquiry</DialogTitle>
-          <div className="pt-5 pr-2 scale-150">
+          <div className="pt-5 mr-4 scale-150 hover:opacity-70">
             <AiOutlineCloseCircle
               className="text-red-500"
               onClick={handleClose}
@@ -89,6 +90,7 @@ export default function EnquireForm() {
             fullWidth
             variant="outlined"
             required={true}
+            multiline="true"
             rows={4}
             maxlength={10}
           />

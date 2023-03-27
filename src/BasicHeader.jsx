@@ -23,6 +23,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import LoginForm from "./LoginForm";
+import SignupForm from "./SignupForm";
 
 const BasicHeader = () => {
   const [state, setState] = React.useState({
@@ -188,7 +190,7 @@ const BasicHeader = () => {
             </div>
           </div>
           <div>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row md:space-x-10">
               <div className="flex flex-row hover:text-orange-500">
                 <SlLocationPin className="text-xl mt-2 " />
                 {/* <p className="pl-1 mt-1">Sodala</p> */}
@@ -201,13 +203,15 @@ const BasicHeader = () => {
               </div>
               <div className="flex flex-row mr-8 text-gray-700 hover:text-orange-500">
                 <MdPermIdentity className="text-xl mt-2 " />
-                <p className="pl-1 mt-1 text-gray-500 hover:text-orange-500">
+                <LoginForm />
+                {/* <p className="pl-1 mt-1 text-gray-500 hover:text-orange-500">
                   Login
-                </p>
+                </p> */}
                 <p className="pl-1 mt-1 text-gray-500">|</p>
-                <p className="pl-1 mt-1 text-gray-500 hover:text-orange-500">
+                <SignupForm />
+                {/* <p className="pl-1 mt-1 text-gray-500 hover:text-orange-500">
                   Sign Up
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
