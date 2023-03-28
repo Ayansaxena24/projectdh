@@ -102,12 +102,13 @@ const ContactUs = () => {
               value={contactNo}
               onChange={handleChange}
             />
-            <input
-              className="p-2 border-gray-400 border rounded-md w-full"
+            <textarea
+              className="p-2 border-gray-400 border rounded-md w-full resize-none"
               type="text"
               name="message"
               placeholder="YOUR MESSAGE"
               value={message}
+              rows={4}
               onChange={handleChange}
             />
             {/* </div> */}
