@@ -35,14 +35,14 @@ import { TfiGallery } from "react-icons/tfi";
 import { SlSocialYoutube } from "react-icons/sl";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 
-const scrollToHome = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-    /* you can also use 'auto' behaviour
-       in place of 'smooth' */
-  });
-};
+// const scrollToHome = () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth",
+//     /* you can also use 'auto' behaviour
+//        in place of 'smooth' */
+//   });
+// };
 const scrollToServices = () => {
   window.scrollTo({
     top: 100,
@@ -141,7 +141,7 @@ const BasicHeader = () => {
               <ListItemIcon>
                 <BiHomeAlt />
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={text} /> 
             </ListItemButton>
           </ListItem>
         ))}
