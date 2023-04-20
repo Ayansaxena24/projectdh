@@ -11,10 +11,13 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
+
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
     left: false,
   });
+
+  
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -23,6 +26,8 @@ export default function TemporaryDrawer() {
 
     setState({ ...state, [anchor]: open }); 
   };
+
+  const images = [InboxIcon, InboxIcon, InboxIcon, InboxIcon, InboxIcon, InboxIcon, InboxIcon, InboxIcon, InboxIcon, InboxIcon]; // array of images
 
   const list = (anchor) => (
     <Box
@@ -36,7 +41,18 @@ export default function TemporaryDrawer() {
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {index === 0 ? <InboxIcon /> : 
+                 index ===1 ? <MailIcon /> :
+                 index ===2 ? <MailIcon/> :
+                 index ===2 ? <MailIcon/> :
+                 index ===2 ? <MailIcon/> :
+                 index ===2 ? <MailIcon/> :
+                 index ===2 ? <MailIcon/> :
+                 index ===2 ? <MailIcon/> :
+                 index ===2 ? <MailIcon/> :
+                 index ===2 ? <MailIcon/> :
+                 index ===2 ? <MailIcon/> : null
+                 }
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>

@@ -16,7 +16,21 @@ import TemporaryDrawer from "./Sidebar";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
+import { BiHomeAlt } from "react-icons/bi";
 import { AiOutlineMinusCircle } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
+import { IoCallOutline } from "react-icons/io5";
+import { SlLocationPin } from "react-icons/sl";
+import { HiHome } from "react-icons/hi2";
+
+const scrollToTop = () =>{
+  window.scrollTo({
+    top: 0, 
+    behavior: 'smooth'
+    /* you can also use 'auto' behaviour
+       in place of 'smooth' */
+  });
+};
 
 const App = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -51,7 +65,18 @@ const App = () => {
         <Scroll className="fixed right-7 bottom-7 md:right-7 md:bottom-7 sm:right-7 sm:bottom-7 lg:right-12 lg:bottom-9 z-10" />
         <ContactUs />
         <LastPage />
-        <div>
+        <div className="sm:hidden py-3 px-10 fixed bottom-0 left-0 right-0 bg-white flex justify-between">
+          <HiHome className="scale-125 text-gray-700" onClick={scrollToTop}/>
+          <AiOutlineMail className="scale-125 text-gray-600"/>
+          <a href="tel:+91-8890073787">
+          <IoCallOutline className="scale-125 text-gray-600"/>
+          </a>
+          <a href="https://maps.google.com/maps/dir//Sthapna+architects+WQ2G%2B78G+Ramnagar+Main+Rd,+Shiv+Puri+Colony,+Sodala+Jaipur,+Rajasthan+302007/@26.9006775,75.7758423,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x396db59e54a6e2b9:0x9781ff1d59d9fd54">
+          <SlLocationPin className="scale-125 text-gray-600"/>
+          </a>
+
+        </div>
+        <div className="hidden sm:inline-block">
           <button
             aria-describedby={id}
             variant="contained"
